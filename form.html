@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir &amp Data Mahasiswa</title>
+</head>
+<body>
+    <header>
+        <h1>Formulir Pendaftaran UKM Pemrograman</h1>
+        <nav>
+            <a href="data.html"> Halaman Data Mahasiswa</a> | 
+            <a href="form.html"> Formulir Pendaftaran UKM</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Form Pendaftaran Anggota Baru</h2>
+            <form action="#" method="post">
+                <!-- 1. Text Input -->
+                <div>
+                    <label for="fullname">Nama Lengkap:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Masukkan nama sesuai KTM" required minlength="3">
+                </div>
+                <br>
+
+                <!-- 2. Email Input -->
+                <div>
+                    <label for="email_ukm">Email Kampus:</label><br>
+                    <input type="email" id="email_ukm" name="email_ukm" placeholder="mhs@uniska-bjm.ac.id" required>
+                </div>
+                <br>
+
+                <!-- 3. Password Input -->
+                <div>
+                    <label for="pass">Kata Sandi Akun:</label><br>
+                    <input type="password" id="pass" name="pass" placeholder="Minimal 8 karakter" required pattern=".{8,}">
+                </div>
+                <br>
+
+                <!-- 4. Number Input -->
+                <div>
+                    <label for="usia">Usia (Tahun):</label><br>
+                    <input type="number" id="usia" name="usia" min="17" max="25" placeholder="17-25" required>
+                </div>
+                <br>
+
+                <!-- 5. Date Input -->
+                <div>
+                    <label for="tgl">Tanggal Bergabung:</label><br>
+                    <input type="date" id="tgl" name="tgl" required>
+                </div>
+                <br>
+
+                <!-- 6. Radio Input -->
+                <fieldset>
+                    <legend>Jenis Kelamin</legend>
+                    <input type="radio" id="pria" name="gender" value="L" required>
+                    <label for="pria">Laki-laki</label>
+                    <input type="radio" id="wanita" name="gender" value="P">
+                    <label for="wanita">Perempuan</label>
+                </fieldset>
+                <br>
+
+                <!-- 7. Checkbox Input (Minimal 3 opsi) -->
+                <div>
+                    <label>Divisi Minat (Bisa pilih lebih dari satu):</label><br>
+                    <input type="checkbox" id="div1" name="divisi" value="web">
+                    <label for="div1">Web Development</label><br>
+                    <input type="checkbox" id="div2" name="divisi" value="mobile">
+                    <label for="div2">Mobile Apps</label><br>
+                    <input type="checkbox" id="div3" name="divisi" value="cyber">
+                    <label for="div3">Cyber Security</label><br>
+                    <input type="checkbox" id="div4" name="divisi" value="ai">
+                    <label for="div4">Artificial Intelligence</label>
+                </div>
+                <br>
+
+                <!-- 8. Select Input (Minimal 4 option) -->
+                <div>
+                    <label for="domisili">Kota Domisili:</label><br>
+                    <select id="domisili" name="domisili" required>
+                        <option value="">-- Pilih Kota --</option>
+                        <option value="banjarmasin">Banjarmasin</option>
+                        <option value="banjarbaru">Banjarbaru</option>
+                        <option value="martapura">Martapura</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <br>
+
+                <!-- Textarea -->
+                <div>
+                    <label for="pengalaman">Pengalaman / Motivasimu:</label><br>
+                    <textarea id="pengalaman" name="pengalaman" rows="4" cols="50" placeholder="Ceritakan singkat pengalaman atau motivasi Anda..."></textarea>
+                </div>
+                <br>
+
+                <!-- Tombol Submit dan Reset -->
+                <div>
+                    <button type="submit">Daftar Sekarang</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Tugas 3 Pemrograman Web</p>
+    </footer>
+</body>
+</html>
